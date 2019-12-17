@@ -1,0 +1,13 @@
+,Date,Race,Circuit,Country,Latitude,Longitude,DBSCAN_Clusters,Subcluster
+0,2020-05-03, Gran Premio Red Bull de España,Circuito de Jerez,SPAIN,36.69444715,-6.15631689958845,0,1
+1,2020-05-17, SHARK Helmets Grand Prix de France,Le Mans,FRANCE,48.00734979999999,0.1967379,0,3
+2,2020-05-31, Gran Premio d'Italia Oakley,Autodromo Internazionale del Mugello,ITALY,43.99938220000001,11.3723647068196,0,0
+3,2020-06-07, Gran Premi Monster Energy de Catalunya,Circuit de Barcelona-Catalunya,SPAIN,41.56946855,2.25806310666666,0,1
+4,2020-06-21, HJC Helmets Motorrad Grand Prix Deutschland,Sachsenring,GERMANY,50.7328604,12.4751047884026,0,0
+5,2020-06-28, Motul TT Assen,TT Circuit Assen,NETHERLANDS,52.95964605,6.5279741969904395,0,3
+7,2020-08-09, Monster Energy Grand Prix České republiky,Automotodrom Brno,CZECH REPUBLIC,49.2102429,16.4506683,0,0
+8,2020-08-16, myWorld Motorrad Grand Prix von Österreich,Red Bull Ring - Spielberg,AUSTRIA,47.223539200000005,14.7604645,0,0
+9,2020-08-30, British Grand Prix,Silverstone Circuit,GREAT BRITAIN,52.071811600000004,-1.01429912415686,0,3
+10,2020-09-13, Gran Premio Octo di San Marino e della Riviera di Rimini,Misano World Circuit Marco Simoncelli,ITALY,43.9622107,12.6840429850135,0,0
+11,2020-10-04, Gran Premio de Aragón,MotorLand Aragón,SPAIN,41.07926445,-0.206414553372675,0,1
+12,2020-11-15, Gran Premio Motul de la Comunitat Valenciana,Circuit Ricardo Tormo,SPAIN,39.4955257,-0.6257045,0,1

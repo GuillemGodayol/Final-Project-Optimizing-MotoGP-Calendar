@@ -1,0 +1,10 @@
+,Date,Race,Circuit,Country,Latitude,Longitude,DBSCAN_Clusters
+0,2020-03-08, Grand Prix of Qatar,Losail International Circuit,QATAR,25.490999600000002,51.452068267511606,-1
+1,2020-03-22,  OR Thailand Grand Prix ,Buriram International Circuit,THAILAND,14.963056900000002,103.085589428401,-1
+2,2020-04-05, Red Bull Grand Prix of The Americas,Circuit Of The Americas,UNITED STATES,30.1387146,-97.6364097869511,-1
+3,2020-04-19, Gran Premio Motul de la República Argentina,Termas de Río Hondo,ARGENTINA,-27.495925500000002,-64.86407829999999,-1
+4,2020-10-18, Motul Grand Prix of Japan,Twin Ring Motegi,JAPAN,36.53364655,140.22998494211902,-1
+5,2020-10-25, Australian Motorcycle Grand Prix,Phillip Island,AUSTRALIA,-38.4966877,145.2389168,-1
+6,2020-11-01, Shell Malaysia Motorcycle Grand Prix,Sepang International Circuit,MALAYSIA,2.7601913,101.73685860714701,-1
+7,2020-07-12, Finland Grand Prix,KymiRing,FINLAND,60.88117595,26.478826152075502,0
+8,2020-07-12, Finland Grand Prix,KymiRing,FINLAND,60.88117595,26.478826152075502,0
