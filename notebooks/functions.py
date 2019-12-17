@@ -113,24 +113,20 @@ def to_subtract(array, dist_list):
 
 
 # A FUNCTION TO CREATE DISTANCE LISTS AS REQUIRED FOR THE ALGORITHM
-def create_dist_list(df, clusters_list):
+def create_dist_list(subcluster):
     """
-    Given an array and a list of clusters (labels), this function returns a dictionary with 
-    the labels as keys and a dist list in the proper format to be passed into the MLROSE 
+    Given a dataframe this function returns a dist list in the proper format to be passed into the MLROSE 
     algorithm as values: a triplet with index of city 1, index of citiy 2, distance between them.
     """
     from geopy import distance
-    cluster_dict = {}
-    for cluster in clusters_list:
-        subcluster = df.loc[df['Subcluster']==cluster].reset_index(drop=True)
-        dist_list = []
-        for i in subcluster.index:
-            for j in subcluster.index:
-                if i < j: 
-                    coord_i = (subcluster.loc[i,'Latitude'],subcluster.loc[i,'Longitude'])
-                    coord_j = (subcluster.loc[j,'Latitude'],subcluster.loc[j,'Longitude'])
+    dist_list = []
+    for i in subcluster.index:
+        for j in subcluster.index:
+            if i < j: 
+                coord_i = (subcluster.loc[i,'Latitude'],subcluster.loc[i,'Longitude'])
+                coord_j = (subcluster.loc[j,'Latitude'],subcluster.loc[j,'Longitude'])
 
-                    dist = distance.distance(coord_i, coord_j).km
-                    dist_list.append((i, j, dist))
-        cluster_dict[cluster] = dist_list
-    return cluster_dict
+                dist = distance.distance(coord_i, coord_j).km
+                dist_list.append((i, j, dist))
+    return dist_list
+
