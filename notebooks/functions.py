@@ -110,3 +110,25 @@ def to_subtract(array, dist_list):
             return el[2]
         elif el[0] == array[-1] and el[1] == array[0]:
             return el[2]
+
+
+# A FUNCTION TO CREATE DISTANCE LISTS AS REQUIRED FOR THE ALGORITHM
+def create_dist_list(df, clusters_list):
+    """
+    Given an array and a list of clusters (labels), this function returns a dictionary with
+    the labels as keys and a dist list in the proper format to be passed into the MLROSE 
+    algorithm as values: a triplet with index of city 1, index of citiy 2, distance between them.
+    """
+    cluster_dict = {}
+    for cluster in clusters_list:
+        subcluster = df.loc[df['Subcluster']==cluster]
+        dist_list = []
+        for i in subcluster.index:
+            for j in subcluster.index:
+                if i < j: 
+                    coord_i = (subcluster.loc[i,'Latitude'],subcluster.loc[i,'Longitude'])
+                    coord_j = (subcluster.loc[j,'Latitude'],subcluster.loc[j,'Longitude'])
+
+            dist = distance.distance(coord_i, coord_j).km
+            dist_list.append((i, j, dist))
+        cluster_dict[cluster] = dist_list
