@@ -94,6 +94,7 @@ def reordering_first(array, index):
     Input: array([3, 1, 2, 0] , 2
     Output: array([2, 0, 3, 1]
     """
+    import numpy as np
     position = int(np.where(array == index)[0])
     return np.roll(array, -position)
 
